@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:ui1/shop_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -43,24 +44,33 @@ class HomePage extends StatelessWidget {
             SizedBox(
               height: MediaQuery.of(context).size.height / 16,
             ),
-            Card(
-              elevation: 20,
-              child: Container(
-                decoration: BoxDecoration(
-                  // color: Colors.amber,
-                  borderRadius: BorderRadius.circular(2),
-                ),
-                // color: Colors.brown[500],
-                width: MediaQuery.of(context).size.width / 1.4,
-                height: 40,
-                alignment: Alignment.center,
-                child: Text(
-                  "Enter Shop",
-                  style: GoogleFonts.dekko(
-                    fontSize: 14,
-                    fontWeight: FontWeight.w900,
-                    color: Colors.brown[800],
-                    letterSpacing: 1.5,
+            GestureDetector(
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) {
+                    return Shop_page();
+                  },
+                ));
+              },
+              child: Card(
+                elevation: 20,
+                child: Container(
+                  decoration: BoxDecoration(
+                    // color: Colors.amber,
+                    borderRadius: BorderRadius.circular(2),
+                  ),
+                  // color: Colors.brown[500],
+                  width: MediaQuery.of(context).size.width / 1.4,
+                  height: 40,
+                  alignment: Alignment.center,
+                  child: Text(
+                    "Enter Shop",
+                    style: GoogleFonts.dekko(
+                      fontSize: 14,
+                      fontWeight: FontWeight.w900,
+                      color: Colors.brown[800],
+                      letterSpacing: 1.5,
+                    ),
                   ),
                 ),
               ),

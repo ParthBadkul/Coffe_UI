@@ -9,6 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         accentColor: Colors.amberAccent,
         backgroundColor: Color.fromRGBO(236, 226, 160, 0.794),
