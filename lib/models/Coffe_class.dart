@@ -7,9 +7,19 @@ class Coffee {
 }
 
 List<Coffee> coffees = [
-  Coffee(name: 'Long Black', price: 4.10, imageUrl: 'imageUrl'),
-  Coffee(name: 'Latte', price: 4.00, imageUrl: 'imageUrl'),
-  Coffee(name: 'Espresso', price: 4.40, imageUrl: 'imageUrl'),
-  Coffee(name: 'Iced Coffe', price: 4.10, imageUrl: 'imageUrl'),
-  Coffee(name: 'Long Black', price: 4.10, imageUrl: 'imageUrl'),
+  Coffee(
+      name: 'Long Black',
+      price: 4.10,
+      imageUrl: 'assets/images/black_coffee.png'),
+  Coffee(name: 'Latte', price: 4.00, imageUrl: 'assets/images/latte.png'),
+  Coffee(
+      name: 'Espresso', price: 4.40, imageUrl: 'assets/images/espresso.jpeg'),
+  Coffee(
+      name: 'Iced Coffe',
+      price: 4.10,
+      imageUrl: 'assets/images/icedcoffee.png'),
+  Coffee(
+      name: 'Long Black',
+      price: 4.10,
+      imageUrl: 'assets/images/black_coffee.png'),
 ];

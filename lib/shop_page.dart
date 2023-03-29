@@ -85,7 +85,7 @@ class Shop_page extends StatelessWidget {
                               ),
                               height: 60,
                               width: 40,
-                              child: Image.asset('assets/images/pngegg.png'),
+                              child: Image.asset(coffees[index].imageUrl),
                             ),
                             Column(
                               mainAxisAlignment: MainAxisAlignment.start,
